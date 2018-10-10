@@ -1,0 +1,8 @@
+{% macro header(backLink, pageTitle) %}
+<header class="page-header">
+  <a href="{{ backLink }}" class="icon-wrapper">
+    <img src="img/icon-back.svg" alt="Back">
+  </a>
+  <h1>{{ pageTitle }}</h1>
+</header>
+{% endmacro %}

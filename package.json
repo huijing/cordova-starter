@@ -1,0 +1,39 @@
+{
+  "name": "cordova-starter",
+  "version": "0.9.0",
+  "description": "Starter kit for Cordova applications",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chen Hui Jing <kakyou_tensai@yahoo.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "browser-sync": "^2.26.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:huijing/cordova-starter.git"
+  },
+  "dependencies": {
+    "cordova": "8.1.2",
+    "cordova-android": "^7.1.1",
+    "node-sass": "^4.9.3"
+  }
+}

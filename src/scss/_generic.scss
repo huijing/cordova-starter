@@ -1,0 +1,88 @@
+// =======
+// Generic
+// =======
+// Resets
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+ul,
+p,
+a,
+img,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+main,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  margin-left: 1em;
+}
+
+input,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input {
+  background: none;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 0;
+}
+
+embed,
+iframe,
+img,
+object,
+video {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+}
+
+// Ground-zero styles
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+// =====
+// Tools
+// =====
+// Mixins
+@mixin z-index($layer, $position: relative) {
+  position: $position;
+  z-index: layer-index($layer);
+}
+
+// Functions
+@function colour($colour, $map: $colours) {
+  @return map-get($colours, $colour);
+}
+
+@function layer-index($layer) {
+  @return index($layers, $layer);
+}
+
+@function text-color($color) {
+  @if (lightness($color) > 49) {
+    @return color(txt-dark); // Lighter background, return dark color
+  } @else {
+    @return color(txt-light); // Darker background, return light color
+  }
+}

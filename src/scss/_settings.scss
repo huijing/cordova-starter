@@ -1,0 +1,43 @@
+// ========
+// Settings
+// ========
+// Breakpoints
+@import 'lib/mappy-bp';
+$breakpoints: (
+  small:    445px,
+  medium:   615px,
+  large:    820px,
+  x-large:  960px
+);
+
+// Responsive typography
+$min-width: 320;
+$max-width: 1280;
+$min-font: 16;
+$max-font: 20;
+
+:root {
+  font-size: #{$min-font}px;
+}
+
+@media (min-width: #{$min-width}px) and (max-width: #{$max-width}px) {
+  :root {
+    font-size: calc( #{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width})));
+  }
+}
+
+@media (min-width: #{$max-width}px) {
+  :root {
+    font-size: #{$max-font}px;
+  }
+}
+
+// Fonts
+@charset 'utf-8';
+
+// Colours palette
+$colours: (
+
+);
+
+// Theme colours
